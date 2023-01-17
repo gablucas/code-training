@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/code-training/static/css/main.e18f028e.css",
+    "main.js": "/code-training/static/js/main.fd244030.js",
+    "index.html": "/code-training/index.html",
+    "main.e18f028e.css.map": "/code-training/static/css/main.e18f028e.css.map",
+    "main.fd244030.js.map": "/code-training/static/js/main.fd244030.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e18f028e.css",
+    "static/js/main.fd244030.js"
+  ]
+}
