@@ -1,10 +1,10 @@
 /* COMPONENTE CHOOSEDIFFICULT */
 .difficult {
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
   gap: 20px;
 }
 
@@ -141,5 +141,52 @@
   to {
     opacity: 1;
   }
+}
+
+@media(max-width: 75rem) {
+
+  .cards {
+    grid-template-columns: repeat(4, 180px);
+  }
+
+}
+
+@media(max-width: 50rem) {
+
+  .options button:hover {
+    font-size: 1.2rem;
+    box-shadow: 0 0 0 2px #FFF, 0 0 0 4px #333;
+  }
+
+  .options {
+    flex-direction: column;
+  }
+
+  .cards {
+    grid-template-columns: repeat(4, 140px);
+  }
+
+  .card {
+    height: 140px;
+    width: 140px;
+  }
+}
+
+@media(max-width: 40rem) {
+
+  .scoreBoard h1 {
+    font-size: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 100px);
+    gap: 15px;
+  }
+
+  .card {
+    height: 100px;
+    width: 100px;
+  }
+
 }
 

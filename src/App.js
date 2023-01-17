@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 
 import Header from './Components/Header';
 import Projects from './Components/Projects';
@@ -7,12 +7,12 @@ import Projects from './Components/Projects';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Header />
       <Routes>
         <Route path='/*' element={<Projects />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

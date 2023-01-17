@@ -5,7 +5,7 @@ import styles from '../Projects.module.css'
 const ShowProjects = () => {
   return (
     <section className={styles.projects}>
-      <Link to='/memory-game'>Memory Game</Link>
+      <Link to='/memory-game'>Jogo da Memória</Link>
       <Link to='/empty'>Empty</Link>
       <Link to='/empty'>Empty</Link>
       <Link to='/empty'>Empty</Link>

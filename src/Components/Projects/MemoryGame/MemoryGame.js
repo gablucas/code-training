@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from '../../Helper/Head';
 import ChooseDifficult from './ChooseDifficult';
 import DisplayGame from './DisplayGame';
 
@@ -8,6 +9,7 @@ const MemoryGame = () => {
 
   return (
     <>
+    <Head title='Jogo da Memória' />
       {!start && <ChooseDifficult setDifficult={setDifficult} difficult={difficult} setStart={setStart}/>}
       {start && <DisplayGame difficult={difficult} />}
     </>
