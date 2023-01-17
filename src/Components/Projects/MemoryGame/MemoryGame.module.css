@@ -1,0 +1,145 @@
+/* COMPONENTE CHOOSEDIFFICULT */
+.difficult {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+}
+
+.options button, .start, .restart {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.start {
+  border: 1px solid #333;
+  transition: .2s;
+}
+
+.start:hover {
+  color: #FFF;
+  box-shadow: 0 0 0 3px #c0c0c0;
+  background-color: #333;
+}
+
+.restart {
+  background: #FFC000;
+  transition: padding border-radius font-size .2s;
+}
+
+.restart:hover {
+  font-size: 1.4rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1rem;
+}
+
+.options button:nth-child(1) {
+  background: #1CF0FF;
+}
+
+.options button:nth-child(2) {
+  background: #0AFF2A;
+}
+
+.options button:nth-child(3) {
+  background: #EB9000;
+}
+
+.options button:nth-child(4) {
+  background: #EB1201;
+}
+
+.options button:nth-child(5) {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.options button:hover {
+  font-size: 1.4rem;
+}
+
+/* COMPONENTE DISPLAYGAME */
+.scoreBoard {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 180px);
+  gap: 20px;
+  width: max-content;
+  margin: auto;
+
+  position: relative;
+}
+
+.card {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: #333;
+  box-shadow: 0 0 0 2px#FFF, 0 0 0 4px #333;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.card span {
+  display: none;
+}
+
+.card:global(.selected) {
+  background-color: tomato;
+  transform: rotateY(180deg) scaleX(-1);
+}
+
+.card:global(.selected) span {
+  display: initial;
+}
+
+.displayModal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.7);
+
+  opacity: 0;
+  animation: showModal 1s forwards;
+}
+
+@keyframes showModal {
+  to {
+    opacity: 1;
+  }
+}
+
